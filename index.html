@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="tip-calcuator-box">
+			<div class="tip-amount">
+				<label>Enter Bill Amount: </label>
+				<input type="number" id="bill-amount" class="amount-input" />
+			</div>
+			<div class="slider">
+				<div class="slider-div">
+					<p>Select Tip Percentage:&nbsp;</p>
+					<p id="rangeValue">10%</p>
+				</div>
+
+				<input type="range" min="0" max="100" value="10" id="tip-percent" />
+			</div>
+
+			<div class="result">
+				<h4>Result</h4>
+				<p>Tip Amount : <span id="tip-amount"></span></p>
+				<p>Total Bill Amount : <span id="all-amount"></span></p>
+			</div>
+		</div>
+	</body>
+	<script src="./index.js"></script>
+</html>

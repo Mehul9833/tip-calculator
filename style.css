@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background: rgb(202, 240, 248);
+	background: linear-gradient(
+		90deg,
+		rgba(202, 240, 248, 1) 0%,
+		rgba(76, 216, 244, 1) 90%
+	); */
+}
+
+.tip-calcuator-box {
+	width: 40%;
+	min-height: 300px;
+	border-radius: 0.5rem;
+	/* background-color: #023e8a; */
+	box-shadow: -5px 0px 53px 13px rgba(0, 0, 0, 0.75);
+	padding: 10px;
+	font-size: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input[type="number"] {
+	/* width: 100%;
+	height: 40px;
+	border: 1px solid red; */
+	border: none;
+	border-bottom: 1px solid #48cae4;
+}
+
+input[type="number"]:focus {
+	/* width: 100%;
+	height: 40px;
+	border: 1px solid red; */
+	border: none;
+	border-bottom: 1px solid #48cae4;
+	outline: none;
+}
+
+.tip-amount {
+	margin-bottom: 1rem;
+	position: relative;
+	/* display: none; */
+}
+
+.amount-input::after {
+	content: "hello";
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.slider {
+	display: flex;
+	/* align-items: center; */
+	flex-direction: column;
+	margin: 1rem 0;
+}
+
+input[type="range"] {
+	background-color: yellow;
+}
+
+.slider-div {
+	display: flex;
+}
+
+.result {
+	margin: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.tip-calcuator-box {
+		width: 100%;
+	}
+}
